@@ -13,3 +13,6 @@ TARGET_BOOTLOADER_BOARD_NAME := odroidc4
 
 ## DTB
 TARGET_DTB_NAME := sm1_s905y3_odroidc4
+
+## Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
