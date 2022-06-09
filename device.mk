@@ -6,8 +6,9 @@
 
 DEVICE_PATH := device/hardkernel/odroidc4
 
-$(call inherit-product, device/amlogic/g12-common/g12.mk)
-
 ## Factory
 PRODUCT_HOST_PACKAGES += \
     aml_image_packer
+
+## Common Tree
+$(call inherit-product, device/amlogic/g12-common/g12.mk)
