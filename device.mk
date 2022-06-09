@@ -11,5 +11,8 @@ BOARD_HAVE_BLUETOOTH := false
 PRODUCT_HOST_PACKAGES += \
     aml_image_packer
 
+## Wi-Fi
+BOARD_HAVE_WIFI := false
+
 ## Inherit from the common tree product makefile
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
