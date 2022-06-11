@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+## Bluetooth
+BOARD_HAVE_BLUETOOTH := false
+
 ## Factory
 PRODUCT_HOST_PACKAGES += \
     aml_image_packer
