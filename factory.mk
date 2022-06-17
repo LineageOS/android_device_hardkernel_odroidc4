@@ -37,8 +37,8 @@ $(INSTALLED_AML_UPGRADE_PACKAGE_TARGET): $(addprefix $(PRODUCT_OUT)/,$(NEEDED_IM
 	$(hide) mkdir -p $(PRODUCT_UPGRADE_OUT)
 ifneq ("$(wildcard $(FACTORY_PATH)/u-boot.bin)","")
 	$(hide) $(call aml-copy-file, $(FACTORY_PATH)/u-boot.bin)
-else ifneq ("$(wildcard vendor/firmware/odroidc4/radio/bootloader.img)","")
-	$(hide) $(call aml-copy-file, vendor/firmware/odroidc4/radio/bootloader.img, u-boot.bin)
+else ifneq ("$(wildcard vendor/amlogic/odroidc4/radio/bootloader.img)","")
+	$(hide) $(call aml-copy-file, vendor/amlogic/odroidc4/radio/bootloader.img, u-boot.bin)
 else
 	$(error "no u-boot.bin found in $(FACTORY_PATH)")
 endif
