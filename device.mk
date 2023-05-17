@@ -13,3 +13,6 @@ PRODUCT_HOST_PACKAGES += \
 
 ## Inherit from the common tree product makefile
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
+
+## Wi-Fi
+BOARD_HAVE_WIFI := false
