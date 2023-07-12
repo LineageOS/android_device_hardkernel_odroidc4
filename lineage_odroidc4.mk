@@ -16,7 +16,6 @@ $(call inherit-product, vendor/lineage/config/common_full_tv.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 ## Device identifier. This must come after all inclusions
-
 PRODUCT_BRAND := hardkernel
 PRODUCT_DEVICE := odroidc4
 PRODUCT_GMS_CLIENTID_BASE := android-askey-tv
