@@ -7,21 +7,21 @@
 TARGET_HAS_TEE := false
 
 # Inherit some common AOSP stuff
-$(call inherit-product, device/google/atv/products/atv_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_tv.mk)
+$(call inherit-product, vendor/lineage/config/common_mini_tablet_wifionly.mk)
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_BRAND := hardkernel
-PRODUCT_DEVICE := odroidc4
+PRODUCT_DEVICE := odroidc4_tab
 PRODUCT_GMS_CLIENTID_BASE := android-askey-tv
 PRODUCT_MANUFACTURER := hardkernel
 PRODUCT_MODEL := odroid c4
-PRODUCT_NAME := lineage_odroidc4
+PRODUCT_NAME := lineage_odroidc4_tab
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=adt3 \
