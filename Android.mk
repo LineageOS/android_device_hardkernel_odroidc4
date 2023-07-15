@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-ifeq ($(TARGET_DEVICE), odroidc4)
+ifneq ($(filter odroidc4 odroidc4_tab, $(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 include $(call all-makefiles-under,$(LOCAL_PATH))
