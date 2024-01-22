@@ -19,3 +19,4 @@ BOARD_HAVE_WIFI := false
 
 ## Inherit from the common tree product makefile
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
+include vendor/amlogic/odroidc4/firmware.mk
