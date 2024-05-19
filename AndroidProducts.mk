@@ -6,8 +6,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_odroidc4.mk
-
-COMMON_LUNCH_CHOICES := \
-    lineage_odroidc4-eng \
-    lineage_odroidc4-user \
-    lineage_odroidc4-userdebug
