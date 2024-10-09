@@ -16,7 +16,6 @@ set -e
 
 export DEVICE=odroidc4
 export DEVICE_COMMON=sm1-common
-export TARGET_SOC=sm1
 export VENDOR=amlogic
 export VENDOR_BRAND=hardkernel
 export VENDOR_COMMON=amlogic
