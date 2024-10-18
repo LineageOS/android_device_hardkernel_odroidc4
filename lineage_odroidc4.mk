@@ -23,12 +23,12 @@ PRODUCT_GMS_CLIENTID_BASE := android-askey-tv
 PRODUCT_MANUFACTURER := hardkernel
 PRODUCT_MODEL := odroid c4
 PRODUCT_NAME := lineage_odroidc4
-PRODUCT_SYSTEM_NAME := odroidc4
 
 PRODUCT_GMS_CLIENTID_BASE := android-droid-tv
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="adt3-user 13 TTT1.230205.001 9565391 release-keys" \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
-
-BUILD_FINGERPRINT := ADT-3/adt3/adt3:13/TTT1.230205.001/9565391:user/release-keys
+    BuildDesc="adt3-user 13 TTT1.230205.001 9565391 release-keys" \
+    BuildFingerprint=ADT-3/adt3/adt3:13/TTT1.230205.001/9565391:user/release-keys \
+    DeviceProduct=adt3 \
+    SystemDevice=odroidc4 \
+    SystemName=odroidc4
