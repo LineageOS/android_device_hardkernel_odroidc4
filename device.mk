@@ -22,6 +22,3 @@ BOARD_HAVE_WIFI := false
 
 ## Inherit from the common tree product makefile
 $(call inherit-product, device/amlogic/sm1-common/sm1.mk)
-
-## Inherit from the proprietary files makefile
-$(call inherit-product, vendor/amlogic/odroidc4/odroidc4-vendor.mk)

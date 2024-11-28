@@ -9,8 +9,10 @@ ifneq ($(filter odroidc4 odroidc4_tab, $(TARGET_DEVICE)),)
 LOCAL_PATH := $(call my-dir)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-include $(LOCAL_PATH)/factory.mk
+RADIO_FILES := $(wildcard $(LOCAL_PATH)/factory/bootfiles/*)
+$(foreach f, $(notdir $(RADIO_FILES)), \
+    $(call add-radio-file,factory/bootfiles/$(f)))
 
--include vendor/amlogic/odroidc4/firmware.mk
+include $(LOCAL_PATH)/factory.mk
 
 endif
