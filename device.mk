@@ -21,4 +21,4 @@ TARGET_HAS_TEE := false
 BOARD_HAVE_WIFI := false
 
 ## Inherit from the common tree product makefile
-$(call inherit-product, device/amlogic/sm1-common/sm1.mk)
+$(call inherit-product, device/amlogic/g12-common/g12.mk)
