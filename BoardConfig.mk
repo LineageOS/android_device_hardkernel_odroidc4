@@ -12,9 +12,6 @@ TARGET_BOOTLOADER_BOARD_NAME := odroidc4
 ## DTB
 TARGET_DTB_NAME := sm1_s905y3_odroidc4
 
-## Kernel config
-TARGET_KERNEL_VARIANT_CONFIG ?= sm1_variant_defconfig
-
 ## Partitions
 BOARD_SUPER_PARTITION_SIZE := 2084569088
 
