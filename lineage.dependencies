@@ -10,5 +10,13 @@
   {
     "repository": "android_hardware_amlogic_u-boot_build",
     "target_path": "hardware/amlogic/u-boot_build"
+  },
+  {
+    "repository": "android_kernel_amlogic_dhd-driver",
+    "target_path": "kernel/platform/kernel-5.15/vendor/amlogic/dhd-driver"
+  },
+  {
+    "repository": "android_kernel_hardkernel_odroidc4-build",
+    "target_path": "kernel/platform/kernel-5.15/vendor/hardkernel/odroidc4-build"
   }
 ]
