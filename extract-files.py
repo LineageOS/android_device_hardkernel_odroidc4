@@ -12,6 +12,7 @@ from extract_utils.main import (
 module = ExtractUtilsModule(
     'odroidc4',
     'hardkernel',
+    add_firmware_proprietary_file=True,
     skip_main_proprietary_file=True,
 )
 
