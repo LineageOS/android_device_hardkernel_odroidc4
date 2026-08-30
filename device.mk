@@ -13,6 +13,10 @@ PRODUCT_HOST_PACKAGES += \
 ## Platform
 TARGET_AMLOGIC_SOC := sm1
 
+## Soong Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 ## TEE
 TARGET_HAS_TEE := false
 
