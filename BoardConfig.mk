@@ -9,7 +9,7 @@ DEVICE_PATH := device/hardkernel/odroidc4
 TARGET_BOOTLOADER_BOARD_NAME := odroidc4
 
 ## DTB
-TARGET_DTB_NAME := sm1_s905y3_odroidc4
+TARGET_DTB_NAME := sm1_s905x3_odroidc4
 
 ## Partitions
 BOARD_SUPER_PARTITION_SIZE := 2084569088
