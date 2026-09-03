@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import re
+
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -23,3 +25,15 @@ module = ExtractUtilsModule(
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(module, '../amlogic/g12-common', module.vendor)
     utils.run()
+
+    path = f'../../../vendor/{module.vendor}/{module.device}/Android.mk'
+    with open(path) as f:
+        content = f.read()
+    content = re.sub(
+        r'ifeq \(\$\(TARGET_DEVICE\),odroidc4\)',
+        'ifneq ($(filter odroidc4 odroidc4_tab,$(TARGET_DEVICE)),)',
+        content,
+    )
+    with open(path, 'w') as f:
+        f.write(content)
+
