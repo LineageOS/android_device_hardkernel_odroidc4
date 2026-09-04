@@ -2,5 +2,12 @@
   {
     "repository": "android_device_amlogic_g12-common",
     "target_path": "device/amlogic/g12-common"
+  {
+    "repository": "android_hardware_amlogic_u-boot",
+    "target_path": "kernel/amlogic/u-boot"
+  },
+  {
+    "repository": "android_hardware_amlogic_u-boot_build",
+    "target_path": "kernel/amlogic/u-boot_build"
   }
 ]
