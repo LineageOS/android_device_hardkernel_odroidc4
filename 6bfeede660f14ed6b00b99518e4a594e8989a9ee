@@ -16,6 +16,24 @@
       "message": "Unused?",
       "revId": "6bfeede660f14ed6b00b99518e4a594e8989a9ee",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86239a50_260a05cc",
+        "filename": "lineage.dependencies",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-04T19:19:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "242bd20a_ec33e844",
+      "revId": "6bfeede660f14ed6b00b99518e4a594e8989a9ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
